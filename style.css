@@ -655,6 +655,9 @@ html {
     width: 100px;
   
   }
+  .btn-button:hover {
+    cursor: pointer;
+  }
   
   @media screen and (max-width: 1150px) {
   
