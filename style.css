@@ -685,7 +685,8 @@ html {
   
   }
   /*------------------------------*/
-  
+/*Carousel*/
+
   .slider-title {
     text-align: center;
     font-size: 2.5rem;
@@ -693,6 +694,258 @@ html {
     vertical-align: middle;
     margin-top: 30px;
   }
+
+  
+
+.slider-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-top: 30px;
+  }
+  
+  
+  #slider {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 50px;
+  
+  }
+  
+  
+  
+  #slider input[type=radio] {
+    display: none;
+  }
+  
+  .slider label {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  #slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #overflow {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #slide1:checked~#slides .inner {
+    margin-left: 0;
+  }
+  
+  #slide2:checked~#slides .inner {
+    margin-left: -100%;
+  }
+  
+  #slide3:checked~#slides .inner {
+    margin-left: -200%;
+  }
+  
+  #slide4:checked~#slides .inner {
+    margin-left: -300%;
+  }
+  
+  #slide5:checked~#slides .inner {
+    margin-left: -400%;
+  }
+  
+  #slide6:checked~#slides .inner {
+    margin-left: -500%;
+  }
+  
+  #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 600%;
+    line-height: 0;
+    height: 400px;
+  }
+  
+  #slides .slide {
+    width: 16.6666666%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    color: #fff;
+  }
+  
+  #slides .slide1 {
+    background-image: url("./images/carousel/croatia.png");
+  
+  }
+  
+  #slides .slide2 {
+    background-image: url("./images/carousel/croatia1.png");
+  
+  }
+  
+  #slides .slide3 {
+    background-image: url("./images/carousel/croatia2.png");
+  
+  }
+  
+  #slides .slide4 {
+    background-image: url("./images/carousel/croatia3.png");
+  
+  }
+  
+  #slides .slide5 {
+    background-image: url("./images/carousel/spain.png");
+  
+  }
+  
+  #slides .slide6 {
+    background-image: url("./images/carousel/spain1.png");
+  
+  }
+  
+  .slide-content h2 {
+    font-size: 2.3rem;
+    font-weight: 400;
+  }
+  
+  .slide-content p {
+    font-size: 1.6rem;
+  }
+  
+  .slide-content {
+    line-height: 25px;
+    color: #fff;
+    opacity: 0.9;
+    margin: px;
+    padding: 10px 25px;
+    background-color: grey;
+  }
+  
+  .slide-click a {
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  #controls {
+    margin: -250px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+  }
+  
+  #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 20px;
+    height: 20px;
+    opacity: .4;
+  }
+  
+  
+  #controls label:hover {
+    opacity: 1;
+    cursor: pointer;
+  
+  
+  }
+  
+  #slide1:checked~#controls label:nth-child(2),
+  #slide2:checked~#controls label:nth-child(3),
+  #slide3:checked~#controls label:nth-child(4),
+  #slide4:checked~#controls label:nth-child(5),
+  #slide5:checked~#controls label:nth-child(6),
+  #slide6:checked~#controls label:nth-child(1) {
+  
+  
+    background:
+      url(https://image.flaticon.com/icons/png/512/32/32213.png) 0 0 no-repeat;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+    background-size: cover;
+  
+  }
+  
+  #slide1:checked~#controls label:nth-last-child(1),
+  #slide2:checked~#controls label:nth-last-child(6),
+  #slide3:checked~#controls label:nth-last-child(5),
+  #slide4:checked~#controls label:nth-last-child(4),
+  #slide5:checked~#controls label:nth-last-child(3),
+  #slide6:checked~#controls label:nth-last-child(2) {
+  
+    background:
+      url(https://image.flaticon.com/icons/png/512/271/271220.png) no-repeat;
+  
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+    background-size: cover;
+  }
+  
+  #bullets {
+    margin: 220px 0 0;
+    text-align: center;
+  }
+  
+  #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+  }
+  
+  #bullets label:hover {
+    cursor: pointer;
+  }
+  
+  #slide1:checked~#bullets label:nth-child(1),
+  #slide2:checked~#bullets label:nth-child(2),
+  #slide3:checked~#bullets label:nth-child(3),
+  #slide4:checked~#bullets label:nth-child(4),
+  #slide5:checked~#bullets label:nth-child(5),
+  #slide6:checked~#bullets label:nth-child(6) {
+  
+    background: #999;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .slide-content h2 {
+      font-size: 1.8rem;
+    }
+  
+    .slide-content p {
+      font-size: 1.5rem;
+    }
+  
+    .slide-content {
+      padding: 15px 10px;
+  
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    .slide-content {
+      line-height: 25px;
+  
+      padding: 5px 10px;
+      background-color: grey;
+    }
+  }
+  /*------------------------------*/
+
+  
   
 
 
