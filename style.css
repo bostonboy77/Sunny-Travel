@@ -371,6 +371,93 @@ html {
   }
   /*------------------------------*/
 
+  /*Second Header*/
+
+.second-header {
+    width: 100%;
+    background-color: #0093d0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .second-header-list {
+    font-size: 1.8rem;
+  
+  
+    color: #fff;
+    font-weight: 580;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .second-header li {
+    list-style: none;
+    padding: 20px 20px;
+  }
+  
+  
+  .middle-img {
+    position: relative;
+    background-image: url('./images/main4.png');
+    background-position: center;
+    width: 100%;
+    height: 70%;
+    background-repeat: repeat-y;
+    background-size: cover;
+    margin-top: 100px;
+    text-align: center;
+  
+  }
+  
+  .middle-title {
+    list-style: none;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: normal;
+    padding-top: 130px;
+  }
+  
+  .second-header-low {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0093d0;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .second-header-low li {
+    list-style: none;
+    padding: 20px 20px;
+  }
+  
+  @media screen and (max-width: 680px) {
+  
+    /*Second Header*/
+    .middle-img {
+      height: 70%;
+    }
+  
+    .second-header {
+      visibility: hidden;
+    }
+  
+    .middle-title {
+      font-size: 5rem;
+  
+    }
+  
+    .second-header-low {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+  }
+
+  /*------------------------------*/
+
   
 
 
