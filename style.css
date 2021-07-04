@@ -945,6 +945,72 @@ html {
   }
   /*------------------------------*/
 
+  /*Who WE Are*/
+
+.aboutus-background {
+    background: #EBEBEB;
+    width: 100%;
+    margin-top: 30px;
+  
+  }
+  .aboutus-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+  
+  }
+  
+  .aboutus-container {
+    background: url("./images/About-Us/aboutus-background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+    
+    
+    
+  }
+    
+  .box_inner {
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid #e7e7e7;
+    background: #ffffff;
+    text-align: center;
+    width: 350px;
+    height: auto;
+    
+    
+  }
+  .box_inner p {
+    text-align: justify;
+    line-height: 24px;
+    color: #808b8d;
+    padding: 10px 0;
+    font-size: 1.4rem;
+  }
+  .box_inner h4 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    line-height: 1.1;
+  }
+  .box_inner a {
+    color: #5a657e;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-top: 1px solid #86b817;
+    padding: 3px 16px;
+    text-transform: capitalize;
+  }
   
   
 
