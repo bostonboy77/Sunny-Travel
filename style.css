@@ -17,11 +17,7 @@ html {
 /*POPUP*/
 
 
-.overlay {
-    background-size: 40%;
-    visibility: hidden;
-    opacity: 1;
-  }
+
   
   .box {
   
@@ -77,7 +73,7 @@ html {
   
   
   .overlay:target {
-    visibility: visible;
+    
     display: block;
     background: url("./images/popup/popup-backg.png") repeat;
     background-size: cover;
