@@ -208,5 +208,118 @@ html {
   
   /*------------------------------*/
 
+  /*HAMBURGER MENU*/
+
+#menu__toggle {
+    visibility: hidden;
+  }
   
+  .hamburger-button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .hamburger-lines,
+  .hamburger-lines::before,
+  .hamburger-lines::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition-duration: 0.05s;
+  }
+  
+  .hamburger-lines::before {
+    content: "";
+    top: -10px;
+  }
+  
+  .hamburger-lines::after {
+    content: "";
+    top: 10px;
+  }
+  
+  .menu-box {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    position: fixed;
+    padding: 75px 0;
+    margin: 0;
+    width: 250px;
+    height: 60.5%;
+    background-color: #fff;
+    top: 0;
+    visibility: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /*Beuszas*/
+    right: -250px;
+    transition-duration: 0.8s;
+    top: 0px;
+  }
+  
+  .menu-item {
+    padding: 20px 30px;
+    font-size: 24px;
+    list-style: none;
+  }
+  
+  .menu-item:hover {
+    background-color: #3da7d4;
+    cursor: pointer;
+  }
+  
+  #menu__toggle:checked~.menu-box {
+    visibility: hidden;
+    /*beuszas*/
+    right: 0;
+  }
+  
+  #menu__toggle:checked~.hamburger-button .hamburger-lines {
+    transform: rotate(45deg);
+  }
+  
+  #menu__toggle:checked~.hamburger-button .hamburger-lines:before {
+    display: none;
+  }
+  
+  #menu__toggle:checked~.hamburger-button .hamburger-lines:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  .hamburger-button {
+    visibility: hidden;
+  }
+  
+  
+  
+  @media screen and (max-width: 800px) {
+    .hamburger-button {
+      visibility: visible;
+      position: absolute;
+      z-index: 3;
+    }
+  
+    .header-menu {
+      visibility: hidden;
+    }
+  
+    #menu__toggle:checked~.menu-box {
+      visibility: visible;
+      /*beuszas*/
+      right: 0;
+    }
+  
+  }
+  /*------------------------------*/
+
 
