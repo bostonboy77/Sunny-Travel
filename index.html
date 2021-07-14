@@ -373,82 +373,444 @@
             </div>
         </div>
     </div>
-    
+    <!----------------------------------------->
 
     <ul class="search-title">
         <li class="search-item">Select a Destination</li>
     </ul>
-    <section class="free-search">
-        <div class="background-line">
+    <section class="dropdown-background-line">
+        <div class="header-first">
+            <div class="header-label">
+                <a href="#search1" class="float-label">Going to</a>
+            </div>
 
-            <form action="free-search" method="post">
+            <div id="search1" class="overlay-dropdown content-items">
+                <div class="search-input">
+                    <input class="filter" type="text" placeholder="Type destination" />
+                </div>
+                <div class="overlay-dropdown2">
+                    <div>
+                        <a href="#/" class="close-dropdown">&times;</a>
+                    </div>
 
-                <div class="form-group">
-                    <div class="search-input">
-                        <label for="goingto">Going to</label>
-                        <select id="goingto" name="going to" class="search-box">
-                            <option value="Going to">Going to</option>
-                            <option value="Austria">Austria</option>
-                            <option value="Turkey">Turkey</option>
-                            <option value="Greece">Greece</option>
-                            <option value="Croatia">Croatia</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Spain">Spain</option>
-                            <option value="Hungary">Hungary</option>
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
 
-                        </select>
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Croatia</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
                     </div>
-                    <div class="search-input">
-                        <label for="departing">Departing</label>
-                        <select id="departing" name="departing" class="search-box">
-                            <option value="Departing">Departing</option>
-                            <option value="Austria">Austria</option>
-                            <option value="Turkey">Turkey</option>
-                            <option value="Greece">Greece</option>
-                            <option value="Croatia">Croatia</option>
-                        </select>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Italy</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
                     </div>
-                    <div class="search-input">
-                        <label for="When">When</label>
-                        <select id="When" name="When" class="search-box">
-                            <option value="When">When</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Spain</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
                     </div>
-                    <div class="search-input">
-                        <label for="night">Duration</label>
-                        <select id="night" name="night" class="search-box">
-                            <option value="Choose a Country">Select duration</option>
-                            <option value="1 night">1 night</option>
-                            <option value="2 night">2 night</option>
-                            <option value="3 night">3 night</option>
-                            <option value="1 week">1 week</option>
-                            <option value="2 week">2 week</option>
-                        </select>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Austria</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
                     </div>
-                    <div class="search-input">
-                        <label for="guests">Guests</label>
-                        <select id="guests" name="Rooms" class="search-box">
-                            <option value="Guests">Guests</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Turkey</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
                     </div>
-                    <div class="search-input-button">
-                        <button class="btn btn-button search-input" type="submit">Search</button>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Hungary</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
+                    </div>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Greece</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
                     </div>
                 </div>
-
-            </form>
+            </div>
         </div>
+        <div class="header-first">
+            <div class="header-label">
+                <a href="#search2" class="float-label">Departing</a>
+            </div>
+
+            <div id="search2" class="overlay-dropdown">
+                <div class="search-input">
+                    <input class="filter" type="text" placeholder="Choose an Airport or a Place" />
+                </div>
+                <div class="overlay-dropdown2">
+                    <div>
+                        <a href="#/" class="close-dropdown">&times;</a>
+                    </div>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">London Airports</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
+                    </div>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">South West Airports</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
+                    </div>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Midland Airports</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
+                    </div>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Wales Airports </span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
+                    </div>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Scotland Airports </span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
+                    </div>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Bristol</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
+                    </div>
+
+                    <div class="content-dropdown">
+                        <div class="dropdown-map-marker">
+                            <i class="fas fa-map-marker-alt"></i>
+
+                            <div class="dropdown-destination">
+                                <span class="destination-item">Birmingham</span>
+                            </div>
+                        </div>
+                        <div class="dropdown-checkbox">
+                            <input type="checkbox" class="checkbox-input" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-first">
+            <div class="header-label">
+                <a href="#search3" class="float-label">When</a>
+            </div>
+
+            <div id="search3" class="overlay-dropdown">
+                <div class="search-input">
+                    <div class="title-dropdown-input">Select Departure Date</div>
+                </div>
+                 <div class="overlay-dropdown2">
+                        <a href="#/" class="close-dropdown">&times;</a>
+                </div>
+                <div class="toggle-container-selector">
+                    <input type="date" class="date-picker">
+
+                </div>
+               
+            </div>
+        </div>
+        <div class="header-first">
+            <div class="header-label">
+                <a href="#search4" class="float-label">Duration</a>
+            </div>
+
+
+
+            <div id="search4" class="overlay-dropdown">
+                
+                    <div class="search-input">
+                       <div class="title-duration"> Select Duration</div>
+                    </div>
+                <div class="duration-option-container">
+                    <div class="overlay-dropdown2">
+                        <div>
+                            <a href="#/" class="close-dropdown">&times;</a>
+                        </div>
+                    </div> 
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="1" disabled>
+                        <span class="filter-radio-text">1 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="2" disabled>
+                        <span class="filter-radio-text">2 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="3" disabled>
+                        <span class="filter-radio-text">3 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="4" disabled>
+                        <span class="filter-radio-text">4 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="5" disabled>
+                        <span class="filter-radio-text">5 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="6" disabled>
+                        <span class="filter-radio-text">6 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="7" disabled>
+                        <span class="filter-radio-text">7 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="8" disabled>
+                        <span class="filter-radio-text">8 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="9" disabled>
+                        <span class="filter-radio-text">9 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="10" disabled>
+                        <span class="filter-radio-text">5 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="5" disabled>
+                        <span class="filter-radio-text">10 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="11" disabled>
+                        <span class="filter-radio-text">11 nighst</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="12" disabled>
+                        <span class="filter-radio-text">12 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="13" disabled>
+                        <span class="filter-radio-text">13 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="14" disabled>
+                        <span class="filter-radio-text">14 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="15" disabled>
+                        <span class="filter-radio-text">15 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="16" disabled>
+                        <span class="filter-radio-text">16 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="17" disabled>
+                        <span class="filter-radio-text">17 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="18" disabled>
+                        <span class="filter-radio-text">18 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="19" disabled>
+                        <span class="filter-radio-text">19 nights</span>
+                    </label>
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="20" disabled>
+                        <span class="filter-radio-text">20 nights</span>
+                    </label>
+
+                    <label class="filter-radio-label">
+                        <input type="radio" class="filter-radio" name="duration" value="21" disabled>
+                        <span class="filter-radio-text">21 nights</span>
+                    </label>
+
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="header-first">
+            <div class="header-label">
+                <a href="#search5" class="float-label">Rooms & guests</a>
+            </div>
+
+            <div id="search5" class="overlay-dropdown">
+                <div class="search-input">
+                    <div class="title-duration">Specify rooms & guests</div>
+                 </div>
+                <div class="overlay-dropdown2">
+                    <a href="#/" class="close-dropdown">&times;</a>
+                </div>
+                <div class="selection-content-header">
+                    <div class="room-header">
+                        <div class="room-name">Room 1</div>
+                        <div class="room-guest-count">1/6</div>
+                    </div>
+                    <div class="pax-selection-stepper">
+                        <div class="stepper-text">Adults</div>
+                        <div class="pax-stepper">
+                            <button disabled class="stepper-increment-decrement" aria-label="decrement Adults">-</button> 
+                            <span class="stepper-value">1</span>
+                            <button disabled class="stepper-increment-decrement" aria-label="increment Adults">+</button> 
+                        </div>
+                    </div>
+                    <div class="pax-selection-stepper">
+                        <div class="stepper-text">Children (0-17)</div>
+                        <div class="pax-stepper">
+                            <button disabled class="stepper-increment-decrement" aria-label="decrement Children">-</button> 
+                            <span class="stepper-value">1</span>
+                            <button disabled class="stepper-increment-decrement" aria-label="increment Children">+</button> 
+                        </div>
+                    </div>
+                </div> 
+                <div class="add-room-wrapper">
+                    <button class="add-room">Add another room</button>
+                </div> 
+                <div class="final-confirm">
+                    <button class="actions-button-close">Cancel</button>
+                    <button class="actions-button-apply">Done</button>
+                </div> 
+            </div>
+        </div> 
+        
+        <div class="header-first">
+            <div class="header-label">
+                <a href="#search6" class="float-label">Budget</a>
+            </div>
+            
+            <div id="search6" class="overlay-dropdown budget-items">
+                <div class="overlay-dropdown2">
+                    <a href="#/" class="close-dropdown">&times;</a>
+                </div>
+                <div class="search-input">
+                    <div class="title-duration">Budget per person</div>
+                 </div>
+                 <div class="budget-dropdown-option">
+                    <div class="budget-dropdown">Any budget</div>
+                 </div>
+                 <div class="budget-dropdown-option">
+                    <div class="budget-dropdown">£2,000+</div>
+                 </div>
+                 <div class="budget-dropdown-option">
+                    <div class="budget-dropdown">£1,500-£2,000</div>
+                 </div>
+                 <div class="budget-dropdown-option">
+                    <div class="budget-dropdown">£1,000-£1,500</div>
+                 </div>
+                 <div class="budget-dropdown-option">
+                    <div class="budget-dropdown">£500-£1,000</div>
+                 </div>
+                 <div class="budget-dropdown-option">
+                    <div class="budget-dropdown">£500</div>
+                 </div>
+            </div>
+
+            
+        </div>
+       
+            <button class="search-button-packages">
+                <span class="search-button-text">Search</span>
+            </button>
+      
+              
     </section>
-    
+    <!----------------------------------------->
 
     <div class="slider-title"> Last Minute Holiday Deal</div>
     <section>
