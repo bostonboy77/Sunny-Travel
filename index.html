@@ -1,1127 +1,1292 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300;1,400&display=swap"
-        rel="stylesheet">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <title>Sunny Travel</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-
-
-    <div id="popup1" class="overlay">
-
-        <div class="popup-container">
-
-            <div class="title">
-                <p class="popup-title">We're Here To Help</p>
-            </div>
-            <div class="popup">
-
-                <a class="close" href="#">&times;</a>
-                <div class="content">
-
-                    <div class="expert-planner-container">
-                        <div>
-                            <h4>Our Vacation Planners are here to answer your questions about:</h4>
-                            <ul>
-                                <li>Vacation details</li>
-                                <li>Our Peace of Mind Travel Plan</li>
-                                <li>Health and safety procedures</li>
-                                <li>And, more!</li>
-                            </ul>
-                            <p class="phone-us">
-                                <span>Need an answer right away? <strong>Call us at 0049-866-755-8581</strong>
-                                </span>
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quaerat excepturi
-                                amet,
-                                natus
-                                consectetur
-                                quo ab ut tempora, cupiditate blanditiis necessitatibus, illo distinctio ullam
-                                quidem
-                                quae
-                                corporis
-                                soluta. Aut, dolorum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-popup" id="myForm">
-                    <form action="https://formspree.io/f/xpzklpae" method="POST" class="form-details">
-                        <input type="text" placeholder="First Name" name="firstname">
-                        <input type="text" placeholder="Last Name" name="lastname">
-                        <input type="number" placeholder="Phone" name="phone">
-                        <input type="email" placeholder="Enter Email" name="email">
-
-                        <textarea name="comments" class="form-comment" placeholder="Comments"></textarea>
-                        <div class="submit-container">
-                            <button type="submit" class="form-button">Send Request</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-
+  <body>
+    <section id="popup1" class="overlay">
+      <div class="popup-container">
+        <div class="title">
+          <p class="popup-title">We're Here To Help</p>
         </div>
-    </div>
+        <div class="popup">
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <div class="expert-planner-container">
+              <div>
+                <h4>
+                  Our Vacation Planners are here to answer your questions about:
+                </h4>
+                <ul>
+                  <li>Vacation details</li>
+                  <li>Our Peace of Mind Travel Plan</li>
+                  <li>Health and safety procedures</li>
+                  <li>And, more!</li>
+                </ul>
+                <p class="phone-us">
+                  <span
+                    >Need an answer right away?
+                    <strong>Call us at 0049-866-755-8581</strong>
+                  </span>
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  quaerat excepturi amet, natus consectetur quo ab ut tempora,
+                  cupiditate blanditiis necessitatibus, illo distinctio ullam
+                  quidem quae corporis soluta. Aut, dolorum.
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <div class="form-popup" id="myForm">
+            <form
+              action="https://formspree.io/f/xpzklpae"
+              method="POST"
+              class="form-details"
+            >
+              <input type="text" placeholder="First Name" name="firstname" />
+              <input type="text" placeholder="Last Name" name="lastname" />
+              <input type="number" placeholder="Phone" name="phone" />
+              <input type="email" placeholder="Enter Email" name="email" />
+
+              <textarea
+                name="comments"
+                class="form-comment"
+                placeholder="Comments"
+              ></textarea>
+              <div class="submit-container">
+                <button type="submit" class="form-button">Send Request</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--Hamburger-menu-->
     <section class="menu">
-        <input type="checkbox" name="hamburger" id="menu__toggle" />
-        <label for="menu__toggle" class="hamburger-button">
-            <span class="hamburger-lines"></span>
-        </label>
+      <input type="checkbox" name="hamburger" id="menu__toggle" />
+      <label for="menu__toggle" class="hamburger-button">
+        <span class="hamburger-lines"></span>
+      </label>
 
-        <ul class="menu-box">
-            <li class="menu-item">Home</li>
-            <li class="menu-item">Who we Are</li>
-            <li class="menu-item">Travel tips</li>
-            <li class="menu-item">Speciality Tours</li>
-            <li class="menu-item">Talk To An Expert</li>
-        </ul>
+      <ul class="menu-box">
+        <li class="menu-item">Home</li>
+        <li class="menu-item">Who we Are</li>
+        <li class="menu-item">Travel tips</li>
+        <li class="menu-item">Speciality Tours</li>
+        <li class="menu-item">Talk To An Expert</li>
+      </ul>
     </section>
 
+    <main class="header-container">
+      <header>
+        <nav class="page-header">
+          <h1 class="main-page-heading">Sunny Travel</h1>
+          <ul class="header-menu">
+            <li class="header-menu-list">
+              <a href="#" class="header-menu-item">Home</a>
+            </li>
+            <li>
+              <a href="#us" class="header-menu-item">Who We Are</a>
+            </li>
+            <li>
+              <a href="#" class="header-menu-item">Travel Tips</a>
+            </li>
+            <li>
+              <a href="#" class="header-menu-item">Speciality Tours</a>
+            </li>
 
-    <div class="main">
-        <header>
+            <li>
+              <a href="#popup1" class="special-item box">Talk To an Expert</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-            <nav class="page-header">
-                <h1 class="main-page-heading">Sunny Travel</h1>
-                <ul class="header-menu">
+      <section class="middle-img">
+        <ul class="upper-header">
+          <li>
+            <a href="#" class="upper-header-list">Rent a Car</a>
+          </li>
+          <li>
+            <a href="#" class="upper-header-list">Information</a>
+          </li>
+          <li>
+            <a href="#" class="upper-header-list">Cataloguer</a>
+          </li>
+          <li>
+            <a href="#" class="upper-header-list">Other Services</a>
+          </li>
+          <li>
+            <a href="#" class="upper-header-list">Blog</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="middle-title">Travel With Us</li>
+        </ul>
 
-                    <li class="header-menu-list">
-                        <a href="#" class="header-menu-item">Home</a>
-                    </li>
-                    <li>
-                        <a href="#us" class="header-menu-item">Who We Are</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header-menu-item">Travel Tips</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header-menu-item">Speciality Tours</a>
-                    </li>
-
-                    <li>
-                        <a href="#popup1" class="special-item box">Talk To an Expert</a>
-                    </li>
-
-                </ul>
-            </nav>
-        </header>
-
-        <div class="middle-img">
-            <ul class="second-header">
-
-                <li>
-                    <a href="#" class="second-header-list">Rent a Car</a>
-                </li>
-                <li>
-                    <a href="#" class="second-header-list">Information</a>
-                </li>
-                <li>
-                    <a href="#" class="second-header-list">Cataloguer</a>
-                </li>
-                <li>
-                    <a href="#" class="second-header-list">Other Services</a>
-                </li>
-                <li>
-                    <a href="#" class="second-header-list">Blog</a>
-                </li>
-
-
-            </ul>
-            <ul>
-                <li class="middle-title">Travel With Us </li>
-            </ul>
-
-
-            <ul class="second-header-low">
-                <li>
-                    <a href="#/" class="second-header-list">Weather</a>
-                </li>
-                <li>
-                    <a href="#/" class="second-header-list">GPS</a>
-                </li>
-                <li>
-                    <a href="#/" class="second-header-list">Web Cam</a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
+        <ul class="lower-header">
+          <li>
+            <a href="#/" class="upper-header-list">Weather</a>
+          </li>
+          <li>
+            <a href="#/" class="upper-header-list">GPS</a>
+          </li>
+          <li>
+            <a href="#/" class="upper-header-list">Web Cam</a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <div class="flip-title">Summer 2021 Holidays</div>
-    <div class="container-country">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="front-country">
-                        <p>Austria</p>
-                    </div>
-                    <div class="flags">
-                        <p><img src="./images/Country-flags/austria-flag.png" alt="aust-flag"></p>
-                    </div>
-                    <div>
-                        <img src="./images/Countries/Austria.png" alt="austria">
-                    </div>
-                </div>
-                <div class="flip-card-back">
-                    <a href="#/" class="country">Austria</a>
-                    <div class="flip-card-back-items">
-                        <a href="#/" class="city">Wien: Book Now!</a>
-                    </div>
-                </div>
+    <section class="container-country">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front-country">
+              <p>Austria</p>
             </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="front-country">
-                        <p>Greece</p>
-                    </div>
-                    <div class="flags">
-                        <p><img src="./images/Country-flags/Greece.png" alt="greece-flag"></p>
-                    </div>
-                    <div>
-                        <img src="./images/Countries/Gree-country.png" alt="greece">
-                    </div>
-                </div>
-                <div class="flip-card-back">
-                    <a href="#/" class="country">Greece</a>
-                    <div class="flip-card-back-items">
-                        <a href="#/" class="city">Athens: Book Now!</a>
-                        <a href="#/" class="city">Corfu: Book Now!</a>
-                        <a href="#/" class="city">Parga: Book Now!</a>
-                        <a href="#/" class="city">Thessaloniki: Book Now!</a>
-                    </div>
-                </div>
+            <div class="flags">
+              <p>
+                <img
+                  src="./images/Country-flags/austria-flag.png"
+                  alt="aust-flag"
+                />
+              </p>
             </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="front-country">
-                        <p>Turkey</p>
-                    </div>
-                    <div class="flags">
-                        <p><img src="./images/Country-flags/turkey-flag.png" alt="turkey-flag"></p>
-                    </div>
-                    <div>
-                        <img src="./images/Countries/turkey-country.png" alt="turkey">
-                    </div>
-                </div>
-                <div class="flip-card-back">
-                    <a href="#/" class="country">Turkey</a>
-                    <div class="flip-card-back-items">
-                        <a href="#/" class="city">Istanbul: Book Now!</a>
-                    </div>
-                </div>
+            <div>
+              <img src="./images/Countries/Austria.png" alt="austria" />
             </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="front-country">
-                        <p>Croatia</p>
-                    </div>
-                    <div class="flags">
-                        <p><img src="./images/Country-flags/croatia-flag.png" alt="croatia-flag"></p>
-                    </div>
-                    <div>
-                        <img src="./images/Countries/croatia-country.png" alt="croatia">
-                    </div>
-                </div>
-                <div class="flip-card-back">
-                    <a href="#/" class="country">Austria</a>
-                    <div class="flip-card-back-items">
-                        <a href="#/" class="city">Dubrovnik: Book Now!</a>
-                        <a href="#/" class="city">Split: Book Now!</a>
-                        <a href="#/" class="city">Zagreb: Book Now!</a>
-                    </div>
-                </div>
+          </div>
+          <div class="flip-card-back">
+            <a href="#/" class="country">Austria</a>
+            <div class="flip-card-back-items">
+              <a href="#/" class="city">Wien: Book Now!</a>
             </div>
+          </div>
         </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="front-country">
-                        <p>Italy</p>
-                    </div>
-                    <div class="flags">
-                        <p><img src="./images/Country-flags/italy-flag.png" alt="italy-flag"></p>
-                    </div>
-                    <div>
-                        <img src="./images/Countries/italy-country.png" alt="italy">
-                    </div>
-                </div>
-                <div class="flip-card-back">
-                    <a href="#/" class="country">Italy</a>
-                    <div class="flip-card-back-items">
-                        <a href="#/" class="city">Rome: Book Now!</a>
-                        <a href="#/" class="city">Venice: Book Now!</a>
-                        <a href="#/" class="city">Florence: Book Now!</a>
-                        <a href="#/" class="city">Naples: Book Now!</a>
-                    </div>
-                </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front-country">
+              <p>Greece</p>
             </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="front-country">
-                        <p>Spain</p>
-                    </div>
-                    <div class="flags">
-                        <p><img src="./images/Country-flags/spain-flag.png" alt="spain-flag"></p>
-                    </div>
-                    <div>
-                        <img src="./images/Countries/spain-country.png" alt="spain">
-                    </div>
-                </div>
-                <div class="flip-card-back">
-                    <a href="#/" class="country">Spain</a>
-                    <div class="flip-card-back-items">
-                        <a href="#/" class="city">Barcelona: Book Now!</a>
-                        <a href="#/" class="city">Madrid: Book Now!</a>
-                        <a href="#/" class="city">Valencia: Book Now!</a>
-                        <a href="#/" class="city">Malaga: Book Now!</a>
-                    </div>
-                </div>
+            <div class="flags">
+              <p>
+                <img
+                  src="./images/Country-flags/Greece.png"
+                  alt="greece-flag"
+                />
+              </p>
             </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="front-country">
-                        <p>Hungary</p>
-                    </div>
-                    <div class="flags">
-                        <p><img src="./images/Country-flags/hungary-flag.png" alt="hungary-flag"></p>
-                    </div>
-                    <div>
-                        <img src="./images/Countries/hungary-country.png" alt="hungary">
-                    </div>
-                </div>
-                <div class="flip-card-back">
-                    <a href="#/" class="country">Hungary</a>
-                    <div class="flip-card-back-items">
-                        <a href="#/" class="city">Budapest: Book Now!</a>
-                    </div>
-                </div>
+            <div>
+              <img src="./images/Countries/Gree-country.png" alt="greece" />
             </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="front-country">
-                        <p>Long Weekend Holidays</p>
-                    </div>
-                    <div class="flags">
-
-                    </div>
-                    <div>
-                        <img src="./images/Countries/longweekend.png" alt="weekend">
-                    </div>
-                </div>
-                <div class="flip-card-back">
-                    <a href="#/" class="country">Long Weekend Holidays</a>
-                    <div class="flip-card-back-items">
-                        <a href="#/" class="city">Prague: Book Now!</a>
-                        <a href="#/" class="city">Amsterdam: Book Now!</a>
-                        <a href="#/" class="city">Berlin: Book Now!</a>
-                        <a href="#/" class="city">London: Book Now!</a>
-                    </div>
-                </div>
+          </div>
+          <div class="flip-card-back">
+            <a href="#/" class="country">Greece</a>
+            <div class="flip-card-back-items">
+              <a href="#/" class="city">Athens: Book Now!</a>
+              <a href="#/" class="city">Corfu: Book Now!</a>
+              <a href="#/" class="city">Parga: Book Now!</a>
+              <a href="#/" class="city">Thessaloniki: Book Now!</a>
             </div>
+          </div>
         </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="front-country">
-                        <p>Ski & Snowboard Trips</p>
-                    </div>
-                    <div class="flags">
-
-                    </div>
-                    <div>
-                        <img src="./images/Countries/skiing.png" alt="ski">
-                    </div>
-                </div>
-                <div class="flip-card-back">
-                    <a href="#/" class="country">Ski & Snowboard Trips</a>
-                    <div class="flip-card-back-items">
-                        <a href="#/" class="city">Innsbruck: Book Now!</a>
-                        <a href="#/" class="city">Chamonix: Book Now!</a>
-                        <a href="#/" class="city">Moritz: Book Now!</a>
-                    </div>
-                </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front-country">
+              <p>Turkey</p>
             </div>
+            <div class="flags">
+              <p>
+                <img
+                  src="./images/Country-flags/turkey-flag.png"
+                  alt="turkey-flag"
+                />
+              </p>
+            </div>
+            <div>
+              <img src="./images/Countries/turkey-country.png" alt="turkey" />
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <a href="#/" class="country">Turkey</a>
+            <div class="flip-card-back-items">
+              <a href="#/" class="city">Istanbul: Book Now!</a>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front-country">
+              <p>Croatia</p>
+            </div>
+            <div class="flags">
+              <p>
+                <img
+                  src="./images/Country-flags/croatia-flag.png"
+                  alt="croatia-flag"
+                />
+              </p>
+            </div>
+            <div>
+              <img src="./images/Countries/croatia-country.png" alt="croatia" />
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <a href="#/" class="country">Austria</a>
+            <div class="flip-card-back-items">
+              <a href="#/" class="city">Dubrovnik: Book Now!</a>
+              <a href="#/" class="city">Split: Book Now!</a>
+              <a href="#/" class="city">Zagreb: Book Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front-country">
+              <p>Italy</p>
+            </div>
+            <div class="flags">
+              <p>
+                <img
+                  src="./images/Country-flags/italy-flag.png"
+                  alt="italy-flag"
+                />
+              </p>
+            </div>
+            <div>
+              <img src="./images/Countries/italy-country.png" alt="italy" />
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <a href="#/" class="country">Italy</a>
+            <div class="flip-card-back-items">
+              <a href="#/" class="city">Rome: Book Now!</a>
+              <a href="#/" class="city">Venice: Book Now!</a>
+              <a href="#/" class="city">Florence: Book Now!</a>
+              <a href="#/" class="city">Naples: Book Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front-country">
+              <p>Spain</p>
+            </div>
+            <div class="flags">
+              <p>
+                <img
+                  src="./images/Country-flags/spain-flag.png"
+                  alt="spain-flag"
+                />
+              </p>
+            </div>
+            <div>
+              <img src="./images/Countries/spain-country.png" alt="spain" />
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <a href="#/" class="country">Spain</a>
+            <div class="flip-card-back-items">
+              <a href="#/" class="city">Barcelona: Book Now!</a>
+              <a href="#/" class="city">Madrid: Book Now!</a>
+              <a href="#/" class="city">Valencia: Book Now!</a>
+              <a href="#/" class="city">Malaga: Book Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front-country">
+              <p>Hungary</p>
+            </div>
+            <div class="flags">
+              <p>
+                <img
+                  src="./images/Country-flags/hungary-flag.png"
+                  alt="hungary-flag"
+                />
+              </p>
+            </div>
+            <div>
+              <img src="./images/Countries/hungary-country.png" alt="hungary" />
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <a href="#/" class="country">Hungary</a>
+            <div class="flip-card-back-items">
+              <a href="#/" class="city">Budapest: Book Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front-country">
+              <p>Long Weekend Holidays</p>
+            </div>
+            <div class="flags"></div>
+            <div>
+              <img src="./images/Countries/longweekend.png" alt="weekend" />
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <a href="#/" class="country">Long Weekend Holidays</a>
+            <div class="flip-card-back-items">
+              <a href="#/" class="city">Prague: Book Now!</a>
+              <a href="#/" class="city">Amsterdam: Book Now!</a>
+              <a href="#/" class="city">Berlin: Book Now!</a>
+              <a href="#/" class="city">London: Book Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="front-country">
+              <p>Ski & Snowboard Trips</p>
+            </div>
+            <div class="flags"></div>
+            <div>
+              <img src="./images/Countries/skiing.png" alt="ski" />
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <a href="#/" class="country">Ski & Snowboard Trips</a>
+            <div class="flip-card-back-items">
+              <a href="#/" class="city">Innsbruck: Book Now!</a>
+              <a href="#/" class="city">Chamonix: Book Now!</a>
+              <a href="#/" class="city">Moritz: Book Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!----------------------------------------->
 
     <ul class="search-title">
-        <li class="search-item">Select a Destination</li>
+      <li class="search-item">Select a Destination</li>
     </ul>
     <section class="dropdown-background-line">
-        <div class="header-first">
-            <div class="header-label">
-                <a href="#search1" class="float-label">Going to</a>
-            </div>
-
-            <div id="search1" class="overlay-dropdown content-items">
-                <div class="search-input">
-                    <input class="filter" type="text" placeholder="Type destination" />
-                </div>
-                <div class="overlay-dropdown2">
-                    <div>
-                        <a href="#/" class="close-dropdown">&times;</a>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Croatia</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Italy</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Spain</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Austria</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Turkey</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Hungary</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Greece</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-first">
-            <div class="header-label">
-                <a href="#search2" class="float-label">Departing</a>
-            </div>
-
-            <div id="search2" class="overlay-dropdown">
-                <div class="search-input">
-                    <input class="filter" type="text" placeholder="Choose an Airport or a Place" />
-                </div>
-                <div class="overlay-dropdown2">
-                    <div>
-                        <a href="#/" class="close-dropdown">&times;</a>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">London Airports</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">South West Airports</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Midland Airports</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Wales Airports </span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Scotland Airports </span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Bristol</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-
-                    <div class="content-dropdown">
-                        <div class="dropdown-map-marker">
-                            <i class="fas fa-map-marker-alt"></i>
-
-                            <div class="dropdown-destination">
-                                <span class="destination-item">Birmingham</span>
-                            </div>
-                        </div>
-                        <div class="dropdown-checkbox">
-                            <input type="checkbox" class="checkbox-input" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-first">
-            <div class="header-label">
-                <a href="#search3" class="float-label">When</a>
-            </div>
-
-            <div id="search3" class="overlay-dropdown">
-                <div class="search-input">
-                    <div class="title-dropdown-input">Select Departure Date</div>
-                </div>
-                <div class="overlay-dropdown2">
-                    <a href="#/" class="close-dropdown">&times;</a>
-                </div>
-                <div class="toggle-container-selector">
-                    <input type="date" class="date-picker">
-
-                </div>
-
-            </div>
-        </div>
-        <div class="header-first">
-            <div class="header-label">
-                <a href="#search4" class="float-label">Duration</a>
-            </div>
-
-
-
-            <div id="search4" class="overlay-dropdown">
-
-                <div class="search-input">
-                    <div class="title-duration"> Select Duration</div>
-                </div>
-                <div class="duration-option-container">
-                    <div class="overlay-dropdown2">
-                        <div>
-                            <a href="#/" class="close-dropdown">&times;</a>
-                        </div>
-                    </div>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="1" disabled>
-                        <span class="filter-radio-text">1 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="2" disabled>
-                        <span class="filter-radio-text">2 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="3" disabled>
-                        <span class="filter-radio-text">3 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="4" disabled>
-                        <span class="filter-radio-text">4 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="5" disabled>
-                        <span class="filter-radio-text">5 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="6" disabled>
-                        <span class="filter-radio-text">6 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="7" disabled>
-                        <span class="filter-radio-text">7 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="8" disabled>
-                        <span class="filter-radio-text">8 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="9" disabled>
-                        <span class="filter-radio-text">9 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="10" disabled>
-                        <span class="filter-radio-text">5 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="5" disabled>
-                        <span class="filter-radio-text">10 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="11" disabled>
-                        <span class="filter-radio-text">11 nighst</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="12" disabled>
-                        <span class="filter-radio-text">12 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="13" disabled>
-                        <span class="filter-radio-text">13 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="14" disabled>
-                        <span class="filter-radio-text">14 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="15" disabled>
-                        <span class="filter-radio-text">15 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="16" disabled>
-                        <span class="filter-radio-text">16 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="17" disabled>
-                        <span class="filter-radio-text">17 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="18" disabled>
-                        <span class="filter-radio-text">18 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="19" disabled>
-                        <span class="filter-radio-text">19 nights</span>
-                    </label>
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="20" disabled>
-                        <span class="filter-radio-text">20 nights</span>
-                    </label>
-
-                    <label class="filter-radio-label">
-                        <input type="radio" class="filter-radio" name="duration" value="21" disabled>
-                        <span class="filter-radio-text">21 nights</span>
-                    </label>
-
-
-
-                </div>
-            </div>
-        </div>
-        <div class="header-first">
-            <div class="header-label">
-                <a href="#search5" class="float-label">Rooms & guests</a>
-            </div>
-
-            <div id="search5" class="overlay-dropdown">
-                <div class="search-input">
-                    <div class="title-duration">Specify rooms & guests</div>
-                </div>
-                <div class="overlay-dropdown2">
-                    <a href="#/" class="close-dropdown">&times;</a>
-                </div>
-                <div class="selection-content-header">
-                    <div class="room-header">
-                        <div class="room-name">Room 1</div>
-                        <div class="room-guest-count">1/6</div>
-                    </div>
-                    <div class="pax-selection-stepper">
-                        <div class="stepper-text">Adults</div>
-                        <div class="pax-stepper">
-                            <button disabled class="stepper-increment-decrement"
-                                aria-label="decrement Adults">-</button>
-                            <span class="stepper-value">1</span>
-                            <button disabled class="stepper-increment-decrement"
-                                aria-label="increment Adults">+</button>
-                        </div>
-                    </div>
-                    <div class="pax-selection-stepper">
-                        <div class="stepper-text">Children (0-17)</div>
-                        <div class="pax-stepper">
-                            <button disabled class="stepper-increment-decrement"
-                                aria-label="decrement Children">-</button>
-                            <span class="stepper-value">1</span>
-                            <button disabled class="stepper-increment-decrement"
-                                aria-label="increment Children">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="add-room-wrapper">
-                    <button class="add-room">Add another room</button>
-                </div>
-                <div class="final-confirm">
-                    <button class="actions-button-close">Cancel</button>
-                    <button class="actions-button-apply">Done</button>
-                </div>
-            </div>
+      <div class="header-first">
+        <div class="header-label">
+          <a href="#search1" class="float-label">Going to</a>
         </div>
 
-        <div class="header-first">
-            <div class="header-label">
-                <a href="#search6" class="float-label">Budget</a>
+        <div id="search1" class="overlay-dropdown content-items">
+          <div class="search-input">
+            <input class="filter" type="text" placeholder="Type destination" />
+          </div>
+          <div class="overlay-dropdown2">
+            <div>
+              <a href="#/" class="close-dropdown">&times;</a>
             </div>
 
-            <div id="search6" class="overlay-dropdown budget-items">
-                <div class="overlay-dropdown2">
-                    <a href="#/" class="close-dropdown">&times;</a>
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Croatia</span>
                 </div>
-                <div class="search-input">
-                    <div class="title-duration">Budget per person</div>
-                </div>
-                <div class="budget-dropdown-option">
-                    <div class="budget-dropdown">Any budget</div>
-                </div>
-                <div class="budget-dropdown-option">
-                    <div class="budget-dropdown">£2,000+</div>
-                </div>
-                <div class="budget-dropdown-option">
-                    <div class="budget-dropdown">£1,500-£2,000</div>
-                </div>
-                <div class="budget-dropdown-option">
-                    <div class="budget-dropdown">£1,000-£1,500</div>
-                </div>
-                <div class="budget-dropdown-option">
-                    <div class="budget-dropdown">£500-£1,000</div>
-                </div>
-                <div class="budget-dropdown-option">
-                    <div class="budget-dropdown">£500</div>
-                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
             </div>
 
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
 
+                <div class="dropdown-destination">
+                  <span class="destination-item">Italy</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Spain</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Austria</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Turkey</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Hungary</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Greece</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-first">
+        <div class="header-label">
+          <a href="#search2" class="float-label">Departing</a>
         </div>
 
-        <button class="search-button-packages">
-            <span class="search-button-text">Search</span>
-        </button>
+        <div id="search2" class="overlay-dropdown">
+          <div class="search-input">
+            <input
+              class="filter"
+              type="text"
+              placeholder="Choose an Airport or a Place"
+            />
+          </div>
+          <div class="overlay-dropdown2">
+            <div>
+              <a href="#/" class="close-dropdown">&times;</a>
+            </div>
 
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
 
+                <div class="dropdown-destination">
+                  <span class="destination-item">London Airports</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">South West Airports</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Midland Airports</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Wales Airports </span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Scotland Airports </span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Bristol</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+
+            <div class="content-dropdown">
+              <div class="dropdown-map-marker">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div class="dropdown-destination">
+                  <span class="destination-item">Birmingham</span>
+                </div>
+              </div>
+              <div class="dropdown-checkbox">
+                <input type="checkbox" class="checkbox-input" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-first">
+        <div class="header-label">
+          <a href="#search3" class="float-label">When</a>
+        </div>
+
+        <div id="search3" class="overlay-dropdown">
+          <div class="search-input">
+            <div class="title-dropdown-input">Select Departure Date</div>
+          </div>
+          <div class="overlay-dropdown2">
+            <a href="#/" class="close-dropdown">&times;</a>
+          </div>
+          <div class="toggle-container-selector">
+            <input type="date" class="date-picker" />
+          </div>
+        </div>
+      </div>
+      <div class="header-first">
+        <div class="header-label">
+          <a href="#search4" class="float-label">Duration</a>
+        </div>
+
+        <div id="search4" class="overlay-dropdown">
+          <div class="search-input">
+            <div class="title-duration">Select Duration</div>
+          </div>
+          <div class="duration-option-container">
+            <div class="overlay-dropdown2">
+              <div>
+                <a href="#/" class="close-dropdown">&times;</a>
+              </div>
+            </div>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="1"
+                disabled
+              />
+              <span class="filter-radio-text">1 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="2"
+                disabled
+              />
+              <span class="filter-radio-text">2 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="3"
+                disabled
+              />
+              <span class="filter-radio-text">3 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="4"
+                disabled
+              />
+              <span class="filter-radio-text">4 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="5"
+                disabled
+              />
+              <span class="filter-radio-text">5 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="6"
+                disabled
+              />
+              <span class="filter-radio-text">6 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="7"
+                disabled
+              />
+              <span class="filter-radio-text">7 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="8"
+                disabled
+              />
+              <span class="filter-radio-text">8 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="9"
+                disabled
+              />
+              <span class="filter-radio-text">9 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="10"
+                disabled
+              />
+              <span class="filter-radio-text">5 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="5"
+                disabled
+              />
+              <span class="filter-radio-text">10 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="11"
+                disabled
+              />
+              <span class="filter-radio-text">11 nighst</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="12"
+                disabled
+              />
+              <span class="filter-radio-text">12 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="13"
+                disabled
+              />
+              <span class="filter-radio-text">13 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="14"
+                disabled
+              />
+              <span class="filter-radio-text">14 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="15"
+                disabled
+              />
+              <span class="filter-radio-text">15 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="16"
+                disabled
+              />
+              <span class="filter-radio-text">16 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="17"
+                disabled
+              />
+              <span class="filter-radio-text">17 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="18"
+                disabled
+              />
+              <span class="filter-radio-text">18 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="19"
+                disabled
+              />
+              <span class="filter-radio-text">19 nights</span>
+            </label>
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="20"
+                disabled
+              />
+              <span class="filter-radio-text">20 nights</span>
+            </label>
+
+            <label class="filter-radio-label">
+              <input
+                type="radio"
+                class="filter-radio"
+                name="duration"
+                value="21"
+                disabled
+              />
+              <span class="filter-radio-text">21 nights</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="header-first">
+        <div class="header-label">
+          <a href="#search5" class="float-label">Rooms & guests</a>
+        </div>
+
+        <div id="search5" class="overlay-dropdown">
+          <div class="search-input">
+            <div class="title-duration">Specify rooms & guests</div>
+          </div>
+          <div class="overlay-dropdown2">
+            <a href="#/" class="close-dropdown">&times;</a>
+          </div>
+          <div class="selection-content-header">
+            <div class="room-header">
+              <div class="room-name">Room 1</div>
+              <div class="room-guest-count">1/6</div>
+            </div>
+            <div class="pax-selection-stepper">
+              <div class="stepper-text">Adults</div>
+              <div class="pax-stepper">
+                <button
+                  disabled
+                  class="stepper-increment-decrement"
+                  aria-label="decrement Adults"
+                >
+                  -
+                </button>
+                <span class="stepper-value">1</span>
+                <button
+                  disabled
+                  class="stepper-increment-decrement"
+                  aria-label="increment Adults"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="pax-selection-stepper">
+              <div class="stepper-text">Children (0-17)</div>
+              <div class="pax-stepper">
+                <button
+                  disabled
+                  class="stepper-increment-decrement"
+                  aria-label="decrement Children"
+                >
+                  -
+                </button>
+                <span class="stepper-value">1</span>
+                <button
+                  disabled
+                  class="stepper-increment-decrement"
+                  aria-label="increment Children"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="add-room-wrapper">
+            <button class="add-room">Add another room</button>
+          </div>
+          <div class="final-confirm">
+            <button class="actions-button-close">Cancel</button>
+            <button class="actions-button-apply">Done</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-first">
+        <div class="header-label">
+          <a href="#search6" class="float-label">Budget</a>
+        </div>
+
+        <div id="search6" class="overlay-dropdown budget-items">
+          <div class="overlay-dropdown2">
+            <a href="#/" class="close-dropdown">&times;</a>
+          </div>
+          <div class="search-input">
+            <div class="title-duration">Budget per person</div>
+          </div>
+          <div class="budget-dropdown-option">
+            <div class="budget-dropdown">Any budget</div>
+          </div>
+          <div class="budget-dropdown-option">
+            <div class="budget-dropdown">£2,000+</div>
+          </div>
+          <div class="budget-dropdown-option">
+            <div class="budget-dropdown">£1,500-£2,000</div>
+          </div>
+          <div class="budget-dropdown-option">
+            <div class="budget-dropdown">£1,000-£1,500</div>
+          </div>
+          <div class="budget-dropdown-option">
+            <div class="budget-dropdown">£500-£1,000</div>
+          </div>
+          <div class="budget-dropdown-option">
+            <div class="budget-dropdown">£500</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="search-button-packages">
+        <span class="search-button-text">Search</span>
+      </button>
     </section>
     <!----------------------------------------->
 
-    <div class="slider-title"> Last Minute Holiday Deal</div>
+    <div class="slider-title">Last Minute Holiday Deal</div>
     <section>
-        <div id="slider">
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2" checked>
-            <input type="radio" name="slider" id="slide3" checked>
-            <input type="radio" name="slider" id="slide4" checked>
-            <input type="radio" name="slider" id="slide5" checked>
-            <input type="radio" name="slider" id="slide6" checked>
-            <div id="slides">
-                <div id="overflow">
-                    <div class="inner">
-                        <div class="slide slide1 slide-click">
-                            <a href="#/">
-                                <div class="slide-content">
-                                    <h2>Croatia</h2>
-                                    <p>From £172</p>
-                                </div>
-                            </a>
+      <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" checked />
+        <input type="radio" name="slider" id="slide3" checked />
+        <input type="radio" name="slider" id="slide4" checked />
+        <input type="radio" name="slider" id="slide5" checked />
+        <input type="radio" name="slider" id="slide6" checked />
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide1 slide-click">
+                <a href="#/">
+                  <div class="slide-content">
+                    <h2>Croatia</h2>
+                    <p>From £172</p>
+                  </div>
+                </a>
+              </div>
+              <div class="slide slide2 slide-click">
+                <a href="#/">
+                  <div class="slide-content">
+                    <h2>Greece</h2>
+                    <p>From £210</p>
+                  </div>
+                </a>
+              </div>
+              <div class="slide slide3 slide-click">
+                <a href="#/">
+                  <div class="slide-content">
+                    <h2>Italy</h2>
+                    <p>From £350</p>
+                  </div>
+                </a>
+              </div>
+              <div class="slide slide4 slide-click">
+                <a href="#/">
+                  <div class="slide-content">
+                    <h2>Cyprus</h2>
+                    <p>From £192</p>
+                  </div>
+                </a>
+              </div>
+              <div class="slide slide5 slide-click">
+                <a href="#/">
+                  <div class="slide-content">
+                    <h2>Malta</h2>
+                    <p>From £235</p>
+                  </div>
+                </a>
+              </div>
 
-                        </div>
-                        <div class="slide slide2 slide-click">
-                            <a href="#/">
-                                <div class="slide-content">
-                                    <h2>Greece</h2>
-                                    <p>From £210</p>
-
-                                </div>
-                            </a>
-                        </div>
-                        <div class="slide slide3 slide-click">
-                            <a href="#/">
-                                <div class="slide-content">
-                                    <h2>Italy</h2>
-                                    <p>From £350</p>
-                                </div>
-                            </a>
-
-                        </div>
-                        <div class="slide slide4 slide-click">
-                            <a href="#/">
-                                <div class="slide-content">
-                                    <h2>Cyprus</h2>
-                                    <p>From £192</p>
-                                </div>
-                            </a>
-
-                        </div>
-                        <div class="slide slide5 slide-click">
-                            <a href="#/">
-                                <div class="slide-content">
-                                    <h2>Malta</h2>
-                                    <p>From £235</p>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="slide slide6 slide-click">
-                            <a href="#/">
-                                <div class="slide-content">
-                                    <h2>Portugal</h2>
-                                    <p>From £280</p>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
+              <div class="slide slide6 slide-click">
+                <a href="#/">
+                  <div class="slide-content">
+                    <h2>Portugal</h2>
+                    <p>From £280</p>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div id="controls">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
-                <label for="slide6"></label>
-            </div>
-            <div id="bullets">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
-                <label for="slide6"></label>
-            </div>
+          </div>
         </div>
+        <div id="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+          <label for="slide5"></label>
+          <label for="slide6"></label>
+        </div>
+        <div id="bullets">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+          <label for="slide5"></label>
+          <label for="slide6"></label>
+        </div>
+      </div>
     </section>
-
 
     <div class="aboutus-background">
-        <p class="aboutus-title">About us</p>
+      <p class="aboutus-title">About us</p>
     </div>
     <section class="aboutus-container" id="us">
-        <div class="box_inner">
-            <h4>Who We Are</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo eligendi asperiores. Laborum aut
-                nobis commodi, voluptates aperiam cumque culpa in minima exercitationem, numquam saepe hic dolores
-                repellendus eligendi eius vitae. Quaerat animi consequatur minus doloribus minima earum perspiciatis hic
-                sed maiores dolores placeat aliquid, vel alias impedit recusandae eligendi.
-            </p>
-            <a href="#/">Read more</a>
-        </div>
-        <div class="box_inner">
-            <h4>Why Choose Sunny Travels</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo eligendi asperiores. Laborum aut
-                nobis commodi, voluptates aperiam cumque culpa in minima exercitationem, numquam saepe hic dolores
-                repellendus eligendi eius vitae. Quaerat animi consequatur minus doloribus minima earum perspiciatis hic
-                sed maiores dolores placeat aliquid, vel alias impedit recusandae eligendi.
-            </p>
-            <a href="#/">Read more</a>
-        </div>
-        <div class="box_inner">
-            <h4>Holiday With Us</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo eligendi asperiores. Laborum aut
-                nobis commodi, voluptates aperiam cumque culpa in minima exercitationem, numquam saepe hic dolores
-                repellendus eligendi eius vitae. Quaerat animi consequatur minus doloribus minima earum perspiciatis hic
-                sed maiores dolores placeat aliquid, vel alias impedit recusandae eligendi.
-            </p>
-            <a href="#/">Read more</a>
-        </div>
-        <div class="box_inner">
-            <h4>Our Mission</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo eligendi asperiores. Laborum aut
-                nobis commodi, voluptates aperiam cumque culpa in minima exercitationem, numquam saepe hic dolores
-                repellendus eligendi eius vitae. Quaerat animi consequatur minus doloribus minima earum perspiciatis hic
-                sed maiores dolores placeat aliquid, vel alias impedit recusandae eligendi.
-            </p>
-            <a href="#/">Read more</a>
-        </div>
-        <div class="box_inner">
-            <h4>Our Vision</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo eligendi asperiores. Laborum aut
-                nobis commodi, voluptates aperiam cumque culpa in minima exercitationem, numquam saepe hic dolores
-                repellendus eligendi eius vitae. Quaerat animi consequatur minus doloribus minima earum perspiciatis hic
-                sed maiores dolores placeat aliquid, vel alias impedit recusandae eligendi.
-            </p>
-            <a href="#/">Read more</a>
-        </div>
-        <div class="box_inner">
-            <h4>Sistainable Tourism</h4>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo eligendi asperiores. Laborum aut
-                nobis commodi, voluptates aperiam cumque culpa in minima exercitationem, numquam saepe hic dolores
-                repellendus eligendi eius vitae. Quaerat animi consequatur minus doloribus minima earum perspiciatis hic
-                sed maiores dolores placeat aliquid, vel alias impedit recusandae eligendi.
-            </p>
-            <a href="#/">Read more</a>
-        </div>
+      <div class="box_inner">
+        <h4>Who We Are</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo
+          eligendi asperiores. Laborum aut nobis commodi, voluptates aperiam
+          cumque culpa in minima exercitationem, numquam saepe hic dolores
+          repellendus eligendi eius vitae. Quaerat animi consequatur minus
+          doloribus minima earum perspiciatis hic sed maiores dolores placeat
+          aliquid, vel alias impedit recusandae eligendi.
+        </p>
+        <a href="#/">Read more</a>
+      </div>
+      <div class="box_inner">
+        <h4>Why Choose Sunny Travels</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo
+          eligendi asperiores. Laborum aut nobis commodi, voluptates aperiam
+          cumque culpa in minima exercitationem, numquam saepe hic dolores
+          repellendus eligendi eius vitae. Quaerat animi consequatur minus
+          doloribus minima earum perspiciatis hic sed maiores dolores placeat
+          aliquid, vel alias impedit recusandae eligendi.
+        </p>
+        <a href="#/">Read more</a>
+      </div>
+      <div class="box_inner">
+        <h4>Holiday With Us</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo
+          eligendi asperiores. Laborum aut nobis commodi, voluptates aperiam
+          cumque culpa in minima exercitationem, numquam saepe hic dolores
+          repellendus eligendi eius vitae. Quaerat animi consequatur minus
+          doloribus minima earum perspiciatis hic sed maiores dolores placeat
+          aliquid, vel alias impedit recusandae eligendi.
+        </p>
+        <a href="#/">Read more</a>
+      </div>
+      <div class="box_inner">
+        <h4>Our Mission</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo
+          eligendi asperiores. Laborum aut nobis commodi, voluptates aperiam
+          cumque culpa in minima exercitationem, numquam saepe hic dolores
+          repellendus eligendi eius vitae. Quaerat animi consequatur minus
+          doloribus minima earum perspiciatis hic sed maiores dolores placeat
+          aliquid, vel alias impedit recusandae eligendi.
+        </p>
+        <a href="#/">Read more</a>
+      </div>
+      <div class="box_inner">
+        <h4>Our Vision</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo
+          eligendi asperiores. Laborum aut nobis commodi, voluptates aperiam
+          cumque culpa in minima exercitationem, numquam saepe hic dolores
+          repellendus eligendi eius vitae. Quaerat animi consequatur minus
+          doloribus minima earum perspiciatis hic sed maiores dolores placeat
+          aliquid, vel alias impedit recusandae eligendi.
+        </p>
+        <a href="#/">Read more</a>
+      </div>
+      <div class="box_inner">
+        <h4>Sistainable Tourism</h4>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nemo
+          eligendi asperiores. Laborum aut nobis commodi, voluptates aperiam
+          cumque culpa in minima exercitationem, numquam saepe hic dolores
+          repellendus eligendi eius vitae. Quaerat animi consequatur minus
+          doloribus minima earum perspiciatis hic sed maiores dolores placeat
+          aliquid, vel alias impedit recusandae eligendi.
+        </p>
+        <a href="#/">Read more</a>
+      </div>
     </section>
 
-
     <footer>
-        <div class="bottom-container">
-            <div class="bottom-item">
-                <div class="bottom-title">Sunny Travel</div>
-                <ul>
-                    <li>
-                        <a href="#/">Holidays</a>
-                    </li>
-                    <li>
-                        <a href="#/">City breaks</a>
-                    </li>
-                    <li>
-                        <a href="#/">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="#/">Holiday weather</a>
-                    </li>
-                    <li>
-                        <a href="#/">Careers</a>
-                    </li>
-                    <li>
-                        <a href="#/">Terms and conditions</a>
-                    </li>
-                    <li>
-                        <a href="#/">Privacy policy</a>
-                    </li>
-                    <li>
-                        <a href="#/">Sitemap</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="bottom-item">
-                <div class="bottom-title">Europe</div>
-                <ul>
-                    <li>
-                        <a href="#/">Croatia</a>
-                    </li>
-                    <li>
-                        <a href="#/">Cyprus</a>
-                    </li>
-                    <li>
-                        <a href="#/">Greece</a>
-                    </li>
-                    <li>
-                        <a href="#/">Italy</a>
-                    </li>
-                    <li>
-                        <a href="#/">Malta</a>
-                    </li>
-                    <li>
-                        <a href="#/">Portugal</a>
-                    </li>
-                    <li>
-                        <a href="#/">Turkey</a>
-                    </li>
-                    <li>
-                        <a href="#/">Spain</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="bottom-item">
-                <div class="bottom-title">Worldwide</div>
-                <ul>
-                    <li>
-                        <a href="#/">Barbados</a>
-                    </li>
-                    <li>
-                        <a href="#/">Cuba</a>
-                    </li>
-                    <li>
-                        <a href="#/">Egypt</a>
-                    </li>
-                    <li>
-                        <a href="#/">Dubai</a>
-                    </li>
-                    <li>
-                        <a href="#/">Jamaica</a>
-                    </li>
-                    <li>
-                        <a href="#/">Mexico</a>
-                    </li>
-                    <li>
-                        <a href="#/">USA</a>
-                    </li>
-                    <li>
-                        <a href="#/">Marocco</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="bottom-text">
-                <div class="bottom-title">Keep up to date</div>
-                <p>Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit.
-                    Minus fuga illum ad ea sit magni eius
-                    reprehenderit nesciunt? Id consequuntur
-                    ipsa eligendi tenetur odit eius!</p>
-                <div class="media-icons">
-                    <ul>
-                        <li class="media-icon">
-                            <a href="#/" class="media-icon-link"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li class="media-icon">
-                            <a href="#/" class="media-icon-link"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li class="media-icon">
-                            <a href="#/" class="media-icon-link"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="media-icon">
-                            <a href="#/" class="media-icon-link"><i class="fab fa-youtube"></i></a>
-                        </li>
-                        <li class="media-icon">
-                            <a href="#/" class="media-icon-link"><i class="fab fa-facebook"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="bottom-container">
+        <div class="bottom-item">
+          <div class="bottom-title">Sunny Travel</div>
+          <ul>
+            <li>
+              <a href="#/">Holidays</a>
+            </li>
+            <li>
+              <a href="#/">City breaks</a>
+            </li>
+            <li>
+              <a href="#/">Contact us</a>
+            </li>
+            <li>
+              <a href="#/">Holiday weather</a>
+            </li>
+            <li>
+              <a href="#/">Careers</a>
+            </li>
+            <li>
+              <a href="#/">Terms and conditions</a>
+            </li>
+            <li>
+              <a href="#/">Privacy policy</a>
+            </li>
+            <li>
+              <a href="#/">Sitemap</a>
+            </li>
+          </ul>
         </div>
-        <nav class="bottom-header">
-
-            <ul class="bottom-menu">
-
-                <li class="bottom-menu-list">
-                    <a href="#" class="bottom-menu-item">Home</a>
-                </li>
-                <li>
-                    <a href="#us" class="bottom-menu-item">Who We Are</a>
-                </li>
-                <li>
-                    <a href="#/" class="bottom-menu-item">Travel Tips</a>
-                </li>
-                <li>
-                    <a href="#/" class="bottom-menu-item">Speciality Tours</a>
-                </li>
-
-                <li>
-                    <a href="#popup1" class="bottom-popup">Talk To an Expert</a>
-                </li>
-
+        <div class="bottom-item">
+          <div class="bottom-title">Europe</div>
+          <ul>
+            <li>
+              <a href="#/">Croatia</a>
+            </li>
+            <li>
+              <a href="#/">Cyprus</a>
+            </li>
+            <li>
+              <a href="#/">Greece</a>
+            </li>
+            <li>
+              <a href="#/">Italy</a>
+            </li>
+            <li>
+              <a href="#/">Malta</a>
+            </li>
+            <li>
+              <a href="#/">Portugal</a>
+            </li>
+            <li>
+              <a href="#/">Turkey</a>
+            </li>
+            <li>
+              <a href="#/">Spain</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-item">
+          <div class="bottom-title">Worldwide</div>
+          <ul>
+            <li>
+              <a href="#/">Barbados</a>
+            </li>
+            <li>
+              <a href="#/">Cuba</a>
+            </li>
+            <li>
+              <a href="#/">Egypt</a>
+            </li>
+            <li>
+              <a href="#/">Dubai</a>
+            </li>
+            <li>
+              <a href="#/">Jamaica</a>
+            </li>
+            <li>
+              <a href="#/">Mexico</a>
+            </li>
+            <li>
+              <a href="#/">USA</a>
+            </li>
+            <li>
+              <a href="#/">Marocco</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-text">
+          <div class="bottom-title">Keep up to date</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fuga
+            illum ad ea sit magni eius reprehenderit nesciunt? Id consequuntur
+            ipsa eligendi tenetur odit eius!
+          </p>
+          <div class="media-icons">
+            <ul>
+              <li class="media-icon">
+                <a href="#/" class="media-icon-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="media-icon">
+                <a href="#/" class="media-icon-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="media-icon">
+                <a href="#/" class="media-icon-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="media-icon">
+                <a href="#/" class="media-icon-link"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+              <li class="media-icon">
+                <a href="#/" class="media-icon-link"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="bottom-header">
+        <ul class="bottom-menu">
+          <li class="bottom-menu-list">
+            <a href="#" class="bottom-menu-item">Home</a>
+          </li>
+          <li>
+            <a href="#us" class="bottom-menu-item">Who We Are</a>
+          </li>
+          <li>
+            <a href="#/" class="bottom-menu-item">Travel Tips</a>
+          </li>
+          <li>
+            <a href="#/" class="bottom-menu-item">Speciality Tours</a>
+          </li>
 
+          <li>
+            <a href="#popup1" class="bottom-popup">Talk To an Expert</a>
+          </li>
+        </ul>
 
-            <p class="copyright-p">Copyright © 2021</p>
-        </nav>
-
+        <p class="copyright-p">Copyright © 2021</p>
+      </nav>
     </footer>
-
-</body>
-
+  </body>
 </html>
