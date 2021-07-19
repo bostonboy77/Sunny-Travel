@@ -290,6 +290,10 @@ html {
   list-style: none;
   font-size: 1.8rem;
 }
+.special-item:hover {
+  box-shadow: 2px 2px 5px grey;
+  border: none;
+}
 
 /*Second Header*/
 
@@ -307,6 +311,9 @@ html {
   font-weight: 580;
   text-decoration: none;
   text-transform: uppercase;
+}
+.upper-header-list:hover {
+  font-weight: 600;
 }
 
 .upper-header li {
@@ -430,6 +437,7 @@ html {
   background-color: white;
   font-size: 2rem;
   text-decoration: none;
+  cursor: default;
 }
 
 .flip-card-back a.city {
@@ -438,7 +446,7 @@ html {
 }
 .flip-card-back-items a {
   display: block;
-  padding: 40px 0 0 0;
+  padding: 43px 0 0 0;
   text-decoration: none;
 }
 .flip-card-back-items .city:hover {
@@ -504,8 +512,8 @@ button {
   padding: 0 30px 0 30px;
 }
 
-button:hover {
-  border: 2px solid black;
+.reservation-submit:hover {
+  box-shadow: 2px 2px 5px rgb(80, 77, 77);
 }
 .reservation-submit {
   font-size: 2.2rem;
@@ -870,6 +878,10 @@ button:hover {
   }
   .reservation-submit {
     margin-bottom: 10px;
+  }
+  .page-header h1 {
+    text-align: center;
+    margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 900px) {
