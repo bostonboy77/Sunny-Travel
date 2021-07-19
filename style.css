@@ -41,7 +41,6 @@ html {
   min-width: 280px;
 }
 
-
 .popup-title {
   display: inline-block;
   text-align: center;
@@ -154,7 +153,6 @@ html {
   padding-bottom: 13px;
 }
 
-
 /*HAMBURGER MENU*/
 
 #menu__toggle {
@@ -248,7 +246,6 @@ html {
   visibility: hidden;
 }
 
-
 /*Header*/
 .header-container {
   height: 100vh;
@@ -294,7 +291,6 @@ html {
   font-size: 1.8rem;
 }
 
-
 /*Second Header*/
 
 .upper-header {
@@ -338,7 +334,7 @@ html {
   padding-top: 130px;
 }
 
-.lower-header{
+.lower-header {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -351,8 +347,6 @@ html {
   list-style: none;
   padding: 20px 20px;
 }
-
-
 
 /*Container-Countries*/
 
@@ -455,16 +449,16 @@ html {
 
 /*Free Search*/
 .reservation-container {
-   width: 100%;
-   height: auto;
-   background-color: var(--blue);
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 20px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: var(--blue);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .elem-group label {
@@ -473,45 +467,45 @@ html {
   text-transform: uppercase;
 }
 .elem-group.inlined input {
-   width: 80px;
+  width: 80px;
 }
 .elem-group.inlined.dateinpicker input {
- width: 100%;
+  width: 100%;
 }
 .elem-group.inlined.dateoutpicker input {
- width: 100%;
+  width: 100%;
 }
 
 .elem-group {
- padding: 15px;
- display: flex;
- flex-direction: column;
- text-align: center;
-}  
-input, select, textarea {
- border-radius: 2px;
- border: 2px solid #777;
- padding: 10px;
- font-size: 1.8rem;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
- 
-
+input,
+select,
+textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  padding: 10px;
+  font-size: 1.8rem;
+}
 
 button {
- height: 50px;
- background: #e86942;
- border: none;
- color: white;
- font-size: 1.25em;
- font-family: 'Nanum Gothic';
- border-radius: 4px;
- cursor: pointer;
- margin: 15px 0 0 20px;
- padding: 0 30px 0 30px;
+  height: 50px;
+  background: #e86942;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: "Nanum Gothic";
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px 0 0 20px;
+  padding: 0 30px 0 30px;
 }
 
 button:hover {
- border: 2px solid black;
+  border: 2px solid black;
 }
 .reservation-submit {
   font-size: 2.2rem;
@@ -731,8 +725,6 @@ button:hover {
 
 /*------------------------------*/
 
-
-
 .aboutus-background {
   background: #ebebeb;
   width: 100%;
@@ -880,89 +872,86 @@ button:hover {
     margin-bottom: 10px;
   }
 }
-  @media screen and (max-width: 900px) {
-    .hamburger-button {
-      visibility: visible;
-      position: absolute;
-      z-index: 3;
-    }
-  
-    .header-menu {
-      visibility: hidden;
-    }
-  
-    #menu__toggle:checked ~ .menu-box {
-      visibility: visible;
-      /*beuszas*/
-      right: 0;
-    }
-    .container-country {
-      display: grid;
-      grid-template-columns: auto;
-      justify-content: center;
-      gap: 20px;
-    }
-  
-    .flip-title {
-      font-size: 3rem;
-    }
-    .dropdown-background-line {
-      display: grid;
-      grid-template-columns: auto;
-      height: 100%;
-    }
-    .header-first {
-      margin-bottom: 10px;
-      padding: 0;
-      
-    }
-    
-    
-    .middle-img {
-      height: 70%;
-    }
-  
-    .upper-header {
-      visibility: hidden;
-    }
-  
-    .middle-title {
-      font-size: 5rem;
-    }
-  
-    .lower-header {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .bottom-container {
-      display: grid;
-      grid-template-columns: auto;
-    }
-    .bottom-item ul {
-      text-align: center;
-    }
-    .bottom-text p {
-      width: 100%;
-      font-size: 1.2rem;
-    }
-    .media-icon .media-icon-link .fab {
-      font-size: 20px;
-    }
-  }
-  @media screen and (max-width: 650px) {
-    .form-details input {
-      width: 100%;
-    }
-    .form-details textarea {
-      width: 100%;
-    }
-    .reservation-container {
-      display: grid;
-      grid-template-columns: auto;
-    }
-    .single-group {
-      text-align: left;
-    }
+@media screen and (max-width: 900px) {
+  .hamburger-button {
+    visibility: visible;
+    position: absolute;
+    z-index: 3;
   }
 
+  .header-menu {
+    visibility: hidden;
+  }
+
+  #menu__toggle:checked ~ .menu-box {
+    visibility: visible;
+    /*beuszas*/
+    right: 0;
+  }
+  .container-country {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .flip-title {
+    font-size: 3rem;
+  }
+  .dropdown-background-line {
+    display: grid;
+    grid-template-columns: auto;
+    height: 100%;
+  }
+  .header-first {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .middle-img {
+    height: 70%;
+  }
+
+  .upper-header {
+    visibility: hidden;
+  }
+
+  .middle-title {
+    font-size: 5rem;
+  }
+
+  .lower-header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .bottom-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .bottom-item ul {
+    text-align: center;
+  }
+  .bottom-text p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .media-icon .media-icon-link .fab {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .form-details input {
+    width: 100%;
+  }
+  .form-details textarea {
+    width: 100%;
+  }
+  .reservation-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .single-group {
+    text-align: left;
+  }
+}
