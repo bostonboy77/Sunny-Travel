@@ -1,3 +1,7 @@
+:root {
+  --blue: rgb(0, 147, 208);
+  --red: rgb(201, 28, 28);
+}
 html {
   box-sizing: border-box;
   font-size: 10px;
@@ -16,7 +20,7 @@ html {
 
 .box {
   margin: 0 auto;
-  background-color: #0093d0;
+  background-color: var(--blue);
   padding: 15px;
   border: 2px solid #fff;
   font-weight: 500;
@@ -49,7 +53,7 @@ html {
 }
 
 .title {
-  background-color: rgb(201, 28, 28);
+  background-color: var(--red);
 }
 
 .overlay {
@@ -86,7 +90,7 @@ html {
 
 .phone-us {
   font-size: 20px;
-  color: rgb(201, 28, 28);
+  color: var(--red);
 }
 
 .form-details input {
@@ -105,13 +109,14 @@ html {
   margin-left: 10px;
   padding: 10px 25px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 2.2rem;
   background: #ffffff;
-  color: rgb(201, 28, 28);
+  color: var(--red);
 }
 
 .form-button:hover {
-  background: #adadad;
+  background: #807d7d;
+  color: #fff;
 }
 
 .popup {
@@ -144,7 +149,7 @@ html {
 }
 
 .submit-container {
-  background-color: rgb(201, 28, 28);
+  background-color: var(--red);
   border-radius: 3px;
   padding-bottom: 13px;
 }
@@ -215,7 +220,7 @@ html {
 }
 
 .menu-item:hover {
-  background-color: #0093d0;
+  background-color: var(--blue);
   color: #fff;
   cursor: pointer;
 }
@@ -294,7 +299,7 @@ html {
 
 .upper-header {
   width: 100%;
-  background-color: #0093d0;
+  background-color: var(--blue);
   display: flex;
   justify-content: center;
 }
@@ -337,7 +342,7 @@ html {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #0093d0;
+  background-color: var(--blue);
   display: flex;
   justify-content: center;
 }
@@ -418,7 +423,7 @@ html {
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: var(--blue);
   color: white;
   transform: rotateY(180deg);
 }
@@ -452,7 +457,7 @@ html {
 .reservation-container {
    width: 100%;
    height: auto;
-   background-color: #0071c2;
+   background-color: var(--blue);
    margin-left: auto;
    margin-right: auto;
    margin-top: 20px;
@@ -846,7 +851,7 @@ button:hover {
   color: #fff;
 }
 .bottom-popup {
-  background-color: rgb(201, 28, 28);
+  background-color: var(--red);
   padding: 15px;
 }
 .copyright-p {
