@@ -116,6 +116,7 @@ html {
 .form-button:hover {
   background: #807d7d;
   color: #fff;
+  box-shadow: 2px 2px 5px black;
 }
 
 .popup {
@@ -290,10 +291,7 @@ html {
   list-style: none;
   font-size: 1.8rem;
 }
-.special-item:hover {
-  box-shadow: 2px 2px 5px grey;
-  border: none;
-}
+
 
 /*Second Header*/
 
@@ -446,8 +444,12 @@ html {
 }
 .flip-card-back-items a {
   display: block;
-  padding: 43px 0 0 0;
+  padding: 30px 0 0 0;
   text-decoration: none;
+  
+}
+.flip-card-back-items {
+padding-top: 20px;
 }
 .flip-card-back-items .city:hover {
   text-decoration: underline;
@@ -841,6 +843,7 @@ button {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .bottom-header ul li {
   list-style: none;
   padding: 10px 15px;
@@ -858,6 +861,8 @@ button {
   text-align: center;
   font-size: 1.3rem;
   color: #fff;
+  margin-top: 15px;
+ padding-bottom: 15px;
 }
 
 @media screen and (max-width: 1350px) {
@@ -965,5 +970,8 @@ button {
   }
   .single-group {
     text-align: left;
+  }
+  .bottom-header ul li {
+    margin-bottom: 15px;
   }
 }
