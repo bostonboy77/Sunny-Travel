@@ -52,7 +52,7 @@ html {
 }
 
 .title {
-  background-color: var(--red);
+  background-color: var(--blue);
 }
 
 .overlay {
@@ -84,17 +84,12 @@ html {
   padding: 30px;
 }
 .expert-planner-container p {
-  padding: 20px;
-}
-
-.phone-us {
-  font-size: 20px;
-  color: var(--red);
+  padding: 5px 5px 5px 20px;
 }
 
 .form-details input {
   width: 350px;
-  padding: 10px 0;
+  padding: 10px 15px;
   margin: 5px 0 10px 0;
 }
 
@@ -102,21 +97,35 @@ html {
   margin-top: 5px;
   width: 350px;
 }
-
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
 .form-button {
   margin-top: 15px;
   margin-left: 10px;
-  padding: 10px 25px;
+  padding: 10px 15px;
   cursor: pointer;
   font-size: 2.2rem;
   background: #ffffff;
-  color: var(--red);
+  color: var(--blue);
 }
 
 .form-button:hover {
   background: #807d7d;
   color: #fff;
   box-shadow: 2px 2px 5px black;
+}
+.phone-text {
+  padding-bottom: 15px;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+.phone-number {
+  color: var(--red);
+  font-size: 2.2rem;
+  padding-left: 20px;
 }
 
 .popup {
@@ -149,9 +158,10 @@ html {
 }
 
 .submit-container {
-  background-color: var(--red);
+  background-color: var(--blue);
   border-radius: 3px;
   padding-bottom: 13px;
+  margin-top: 15px;
 }
 
 /*HAMBURGER MENU*/
@@ -292,7 +302,6 @@ html {
   font-size: 1.8rem;
 }
 
-
 /*Second Header*/
 
 .upper-header {
@@ -423,7 +432,7 @@ html {
 
 .flip-card-back {
   background-color: var(--blue);
-  color: white;
+  color: #fff;
   transform: rotateY(180deg);
 }
 
@@ -432,7 +441,7 @@ html {
   top: 25px;
   color: black;
   padding: 10px 50px;
-  background-color: white;
+  background-color: #fff;
   font-size: 2rem;
   text-decoration: none;
   cursor: default;
@@ -446,10 +455,9 @@ html {
   display: block;
   padding: 30px 0 0 0;
   text-decoration: none;
-  
 }
 .flip-card-back-items {
-padding-top: 20px;
+  padding-top: 20px;
 }
 .flip-card-back-items .city:hover {
   text-decoration: underline;
@@ -862,7 +870,7 @@ button {
   font-size: 1.3rem;
   color: #fff;
   margin-top: 15px;
- padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 @media screen and (max-width: 1350px) {
@@ -887,6 +895,10 @@ button {
   .page-header h1 {
     text-align: center;
     margin-bottom: 25px;
+  }
+  .form-details input,
+  textarea {
+    text-align: center;
   }
 }
 @media screen and (max-width: 900px) {
@@ -973,5 +985,11 @@ button {
   }
   .bottom-header ul li {
     margin-bottom: 15px;
+  }
+  .phone-number {
+    font-size: 1.9rem;
+  }
+  .submit-container {
+    text-align: center;
   }
 }

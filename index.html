@@ -34,12 +34,13 @@
                   <li>And, more!</li>
                 </ul>
                 <p class="phone-us">
-                  <span
-                    >Need an answer right away?
-                    <strong>Call us at 0049-866-755-8581</strong>
-                  </span>
-                </p>
-                <p>
+                  <div class="phone-text" >Need an answer right away?</div>
+                  <strong class="phone-number">Call us at 0049-866-755-8581</strong>
+                </p> 
+                    
+                  
+                
+                <p class="text-info">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
                   quaerat excepturi amet, natus consectetur quo ab ut tempora,
                   cupiditate blanditiis necessitatibus, illo distinctio ullam
@@ -55,12 +56,12 @@
               method="POST"
               class="form-details"
             >
-              <input type="text" placeholder="First Name" name="firstname" />
-              <input type="text" placeholder="Last Name" name="lastname" />
-              <input type="number" placeholder="Phone" name="phone" />
-              <input type="email" placeholder="Enter Email" name="email" />
+              <input type="text" placeholder="First Name" name="firstname" required />
+              <input type="text" placeholder="Last Name" name="lastname" required />
+              <input type="phone" placeholder="Phone" name="phone" required />
+              <input type="email" placeholder="Enter Email" name="email" required />
 
-              <textarea
+              <textarea 
                 name="comments"
                 class="form-comment"
                 placeholder="Comments"
