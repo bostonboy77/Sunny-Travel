@@ -118,6 +118,7 @@ textarea {
   background: #807d7d;
   color: #fff;
   box-shadow: 2px 2px 5px black;
+  font-weight: 500;
 }
 .phone-text {
   padding-bottom: 15px;
@@ -913,12 +914,16 @@ button {
   .form-details input[type="tel"]::placeholder {
     text-align: center;
   }
-  .form-details textarea {
+  .form-details input[type="number"]::placeholder {
     text-align: center;
   }
-  .form-details textarea:focus{
-    text-align:left;
+  .form-details textarea::placeholder{
+    text-align: center;
   }
+  .form-details textarea {
+    
+  }
+  
   .submit-container {
     margin-left: 0;
   }  
