@@ -88,14 +88,15 @@ html {
 }
 
 .form-details input {
-  width: 350px;
+  width: 90%;
   padding: 10px 15px;
-  margin: 5px 0 10px 0;
+  margin: 5px 0 10px 20px;
 }
 
 .form-details textarea {
   margin-top: 5px;
-  width: 350px;
+  width: 90%;
+  margin: 5px 0 10px 20px;
 }
 textarea {
   font-family: "Roboto", sans-serif;
@@ -109,6 +110,8 @@ textarea {
   font-size: 2.2rem;
   background: #ffffff;
   color: var(--blue);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
 .form-button:hover {
@@ -162,6 +165,7 @@ textarea {
   border-radius: 3px;
   padding-bottom: 13px;
   margin-top: 15px;
+  margin-left: 20px;
 }
 
 /*HAMBURGER MENU*/
@@ -877,6 +881,9 @@ button {
   .popup-container {
     margin-left: 80px;
   }
+  .form-details input {
+    margin-right: 10px;
+  }
 }
 @media screen and (max-width: 1150px) {
   .popup {
@@ -896,10 +903,32 @@ button {
     text-align: center;
     margin-bottom: 25px;
   }
-  .form-details input,
-  textarea {
+  
+  .form-details input[type="email"]::placeholder {
     text-align: center;
   }
+  .form-details input[type="text"]::placeholder {
+    text-align: center;
+  }
+  .form-details input[type="tel"]::placeholder {
+    text-align: center;
+  }
+  .form-details textarea {
+    text-align: center;
+  }
+  .form-details textarea:focus{
+    text-align:left;
+  }
+  .submit-container {
+    margin-left: 0;
+  }  
+  .form-button {
+    margin: 25px 20px 20px 20px;
+  }
+  .expert-planner-container {
+    margin-bottom: 15px;
+  }
+  
 }
 @media screen and (max-width: 900px) {
   .hamburger-button {
@@ -968,13 +997,14 @@ button {
   .media-icon .media-icon-link .fab {
     font-size: 20px;
   }
+  
 }
 @media screen and (max-width: 650px) {
   .form-details input {
-    width: 100%;
+    width: 90%;
   }
   .form-details textarea {
-    width: 100%;
+    width: 90%;
   }
   .reservation-container {
     display: grid;
