@@ -1002,7 +1002,9 @@ button {
   .media-icon .media-icon-link .fab {
     font-size: 20px;
   }
-  
+  .media-icons {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 650px) {
   .form-details input {
@@ -1027,4 +1029,5 @@ button {
   .submit-container {
     text-align: center;
   }
+  
 }
