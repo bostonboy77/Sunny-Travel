@@ -296,7 +296,9 @@ textarea {
   text-transform: uppercase;
   letter-spacing: normal;
 }
-
+.header-menu-item:hover {
+  color: rgb(200, 122, 50);
+}
 .header-menu li {
   list-style: none;
 }
@@ -920,9 +922,7 @@ button {
   .form-details textarea::placeholder{
     text-align: center;
   }
-  .form-details textarea {
-    
-  }
+  
   
   .submit-container {
     margin-left: 0;
