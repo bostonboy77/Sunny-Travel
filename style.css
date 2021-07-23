@@ -90,13 +90,13 @@ html {
 .form-details input {
   width: 90%;
   padding: 10px 15px;
-  margin: 5px 0 10px 20px;
+  margin: 20px 0 10px 20px;
 }
 
 .form-details textarea {
   margin-top: 5px;
   width: 90%;
-  margin: 5px 0 10px 20px;
+  margin: 10px 0 10px 20px;
 }
 textarea {
   font-family: "Roboto", sans-serif;
@@ -1008,10 +1008,10 @@ button {
 }
 @media screen and (max-width: 650px) {
   .form-details input {
-    width: 90%;
+    width: 86%;
   }
   .form-details textarea {
-    width: 90%;
+    width: 86%;
   }
   .reservation-container {
     display: grid;
